@@ -23,3 +23,8 @@ class DateTimeSerializer(Serializer):
 serialization = SerializationMiddleware()
 serialization.register_serializer(DateTimeSerializer(), 'TinyDate')
 db = TinyDB('db.json', storage=serialization)
+
+# MQTT
+topics = ['/vitalerter/adrian/vitals']
+hostname = "broker.hivemq.com"
+client_id = "adrian8Kj3D"

@@ -5,10 +5,8 @@ import paho.mqtt.subscribe as subscribe
 from marshmallow import ValidationError
 from tinydb import where
 
-from common import db
+from common import db, hostname, topics
 from schemas import VitalsSchema
-
-topics = ['/vitalerter/adrian/vitals']
 
 
 # Extract a vitals data message from MQ and update vitals data in the database
@@ -56,4 +54,4 @@ def callback(client, userdata, message):
 
 
 if __name__ == '__main__':
-    subscribe.callback(callback, topics, hostname="broker.hivemq.com")
+    subscribe.callback(callback, topics, hostname=hostname)
