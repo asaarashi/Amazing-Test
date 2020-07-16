@@ -1,0 +1,16 @@
+click==7.1.2
+DateTime==4.3
+Flask==1.1.2
+flask-marshmallow==0.13.0
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+marshmallow==3.7.0
+paho-mqtt==1.5.0
+pkg-resources==0.0.0
+pytz==2020.1
+six==1.15.0
+tinydb==4.1.1
+tinydb-serialization==2.0.0
+Werkzeug==1.0.1
+zope.interface==5.1.0
