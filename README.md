@@ -15,7 +15,8 @@ And then install dependencies,
 #### `pip install -r requirements.txt`
 
 ### Start the API server
-Execute the following command to run the app:
+Execute the following commands to run the app:
+#### `export FLASK_APP=app.py`
 #### `flask run`
 Open [http://localhost:5000](http://localhost:5000) in the browser, if it displays "Hello world!", the server is ready.
 ### Publish and subscribe via MQTT
